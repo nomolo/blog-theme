@@ -1,3 +1,7 @@
+# This repo is just forked from CaiJimmy's repository to add visitor counting functionality
+
+**Thank [@CaiJimmy](https://github.com/CaiJimmy)'s job for making this excellent theme for us.**
+
 ![image](https://user-images.githubusercontent.com/5889006/190859441-141b5f81-8483-40d2-bd96-ebf85616a46d.png)
 
 # Hugo Theme Stack
