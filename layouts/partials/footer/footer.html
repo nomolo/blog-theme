@@ -20,4 +20,13 @@
         {{ T "footer.builtWith" (dict "Generator" $Generator) | safeHTML }} <br />
         {{ T "footer.designedBy" (dict "Theme" $Theme "DesignedBy" $DesignedBy) | safeHTML }}
     </section>
+
+    <section style="color: var(--body-text-color); font-weight: 400; font-size: 1.4rem">
+        {{- if eq .Site.LanguageCode "zh-cn" -}}
+        <span id="busuanzi_container_site_pv" style="display:none">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+        {{- else if eq .Site.LanguageCode "en" -}}
+        <span id="busuanzi_container_site_pv" style="display:none">Total visits <span id="busuanzi_value_site_pv"></span> times</span>
+        {{- end -}}
+    </section>
+
 </footer>

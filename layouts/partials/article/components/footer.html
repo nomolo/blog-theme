@@ -16,4 +16,13 @@
         </span>
     </section>
     {{- end -}}
+
+    <section style="color: var(--body-text-color); font-weight: 400; font-size: 1.4rem;text-transform: none">
+        {{- if eq .Site.LanguageCode "zh-cn" -}}
+        <span id="busuanzi_container_page_pv" style="display:none">本文总阅读量<span id="busuanzi_value_page_pv"></span>次</span>
+        {{- else if eq .Site.LanguageCode "en" -}}
+        <span id="busuanzi_container_page_pv" style="display:none">Total views <span id="busuanzi_value_page_pv"></span> times</span>
+        {{- end -}}
+    </section>
+
 </footer>

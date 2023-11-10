@@ -33,7 +33,13 @@
         
         <div class="site-meta">
             <h1 class="site-name"><a href="{{ .Site.BaseURL | relLangURL }}">{{ .Site.Title }}</a></h1>
-            <h2 class="site-description">{{ .Site.Params.sidebar.subtitle }}</h2>
+            <h2 class="site-description">
+                {{- if eq .Site.LanguageCode "zh-cn" -}}
+                {{ .Site.Params.sidebar.subtitle_zh_cn }}
+                {{- else if eq .Site.LanguageCode "en" -}}
+                {{ .Site.Params.sidebar.subtitle_en }}
+                {{- end -}}
+            </h2>
         </div>
     </header>
 
